@@ -5,40 +5,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 	<title>Calculator</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 	<div id="calculator">
-		<table class="controls">
+		<table class="controls noselect">
 			<tr>
-				<td colspan="4" id="input">1234</td>
+				<td unselectable="on" colspan="4" id="input">1234</td>
 			</tr>
 			<tr>
-				<td class="calcBtn" id="ac">AC</td>
-				<td class="calcBtn" id="ce">CE</td>
-				<td class="calcBtn" id="divided">/</td>
-				<td class="calcBtn" id="times">*</td>
+				<td class="calcBtn clearControl" id="ac">AC</td>
+				<td class="calcBtn clearControl" id="ce">CE</td>
+				<td class="calcBtn mathControl" id="divided">&divide;</td>
+				<td class="calcBtn mathControl" id="times">*</td>
 			</tr>
 			<tr>
 				<td class="calcBtn" id="seven">7</td>
 				<td class="calcBtn" id="eight">8</td>
 				<td class="calcBtn" id="nine">9</td>
-				<td class="calcBtn" id="minus">-</td>
+				<td class="calcBtn mathControl" id="minus">-</td>
 			</tr>
 			<tr>
 				<td class="calcBtn" id="four">4</td>
 				<td class="calcBtn" id="five">5</td>
 				<td class="calcBtn" id="six">6</td>
-				<td class="calcBtn" id="plus">+</td>
+				<td class="calcBtn mathControl" id="plus">+</td>
 			</tr>
 			<tr>
 				<td class="calcBtn" id="one">1</td>
 				<td class="calcBtn" id="two">2</td>
 				<td class="calcBtn" id="three">3</td>
-				<td class="calcBtn" id="equals" rowspan="2">=</td>
+				<td class="calcBtn mathControl" id="equals" rowspan="2">=</td>
 			</tr>
 			<tr>
 				<td class="calcBtn" id="zero" colspan="2">0</td>
