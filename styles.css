@@ -69,3 +69,7 @@ table td#input {
         -ms-user-select: none; 
             user-select: none; 
 }
+
+.center {
+  text-align: center;
+}
